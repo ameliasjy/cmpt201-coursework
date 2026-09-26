@@ -1,15 +1,12 @@
 #include <stdio.h>
-#include <string.h>
 #include <unistd.h>
 
 int main() {
   fork();
 
-  char *message = "Hello world!\n";
-
-  for (int i = 0; i < strlen(message); i++) {
+  for (int i = 0; i < 20; i++) {
     printf("Sleeping\n");
-    sleep(2);
+    sleep(1);
   }
 
   printf("DONE\n");
